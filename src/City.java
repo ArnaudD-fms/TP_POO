@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class City {
     private String name;
     private String country;
@@ -13,6 +15,14 @@ public class City {
         this.name = name;
         this.country = country;
         setPopulation(population);
+    }
+
+    public void display() {
+        if (country == null || "unknown".equals(country)) {
+            System.out.println("ville de " + name + " ayant " + population + " habitants");
+        } else {
+            System.out.println("ville de " + name + " en " + country + " ayant " + population + " habitants");
+        }
     }
 
     public String getName() {

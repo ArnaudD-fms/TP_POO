@@ -9,9 +9,10 @@ public class TestCity {
         System.out.println(tokyo);
 
         toulouse.setPopulation(toulouse.getPopulation() + 20000);
-        System.out.println(toulouse);
+        toulouse.display();
 
+        bordeaux.display();
         bordeaux.setCountry("France");
-        System.out.println(bordeaux);
+        bordeaux.display();
     }
 }
