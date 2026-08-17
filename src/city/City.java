@@ -16,7 +16,7 @@ public class City {
     private int population;
 
     /**
-     * Construit une ville sans pays renseigné.
+     * Construit une ville avec son nom et sa population.
      *
      * @param name le nom de la ville
      * @param population le nombre d'habitants de la ville
@@ -26,6 +26,17 @@ public class City {
         this.name = name;
         this.country = "unknown";
         setPopulation(population);
+    }
+
+    /**
+     * Construit une ville avec son nom et sa population.
+     *
+     * @param name le nom de la ville
+     * @param country le pays dans lequel se trouve la ville
+     */
+    public City(String name, String country) {
+        this.name = name;
+        this.country = country;
     }
 
     /**
