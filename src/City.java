@@ -3,10 +3,16 @@ public class City {
     private String country;
     private int population;
 
+    public City(String name, int population) {
+        this.name = name;
+        this.country = "unknown";
+        setPopulation(population);
+    }
+
     public City(String name, String country, int population) {
         this.name = name;
         this.country = country;
-        this.population = population;
+        setPopulation(population);
     }
 
     public String getName() {
@@ -30,15 +36,14 @@ public class City {
     }
 
     public void setPopulation(int population) {
+        if (population < 0) {
+            throw new IllegalArgumentException("la population ne peut pas être négative");
+        }
         this.population = population;
     }
 
     @Override
     public String toString() {
-        return "City{" +
-                "name='" + name + '\'' +
-                ", country='" + country + '\'' +
-                ", population=" + population +
-                '}';
+        return "[ville : " + name + "] [pays : "+ country + "] [nombre d'habitants : " + population + "]";
     }
 }
