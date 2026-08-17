@@ -1,4 +1,4 @@
-package city;
+package fr.fms.city;
 
 /**
  * Représente une ville avec son nom, son pays et sa population.

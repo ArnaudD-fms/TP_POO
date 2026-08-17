@@ -1,4 +1,4 @@
-package city;
+package fr.fms.city;
 
 import java.util.ArrayList;
 import java.util.Arrays;
