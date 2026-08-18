@@ -11,8 +11,19 @@ package fr.fms.city;
  */
 public class City {
 
+    /**
+     * nom de la ville
+     */
     private String name;
+
+    /**
+     * Pays dans lequel se situe la ville
+     */
     private String country;
+
+    /**
+     * Nombre d'habitants dans la ville
+     */
     private int population;
 
     /**

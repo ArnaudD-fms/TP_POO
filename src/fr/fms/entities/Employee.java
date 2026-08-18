@@ -11,7 +11,14 @@ import fr.fms.person.Person;
  *
  */
 public class Employee extends Person {
+    /**
+     * Entreprise dans laquelle l'employé travail
+     */
     private Company company;
+
+    /**
+     * Salaire de l'employé
+     */
     private double salary;
 
     /**

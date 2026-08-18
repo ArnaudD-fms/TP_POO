@@ -13,6 +13,9 @@ import fr.fms.city.City;
  */
 public class Capital extends City {
 
+    /**
+     * Monument de la ville
+     */
     private String monument;
 
     /**

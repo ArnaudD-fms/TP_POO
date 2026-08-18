@@ -35,8 +35,7 @@ public class Person {
      * @param age l'âge de la personne
      */
     public Person(String lastname, String firstname, int age) {
-        this.lastname = lastname;
-        this.firstname = firstname;
+        this(lastname, firstname);
         this.age = age;
     }
 
@@ -49,9 +48,7 @@ public class Person {
      * @param address l'adresse de la personne
      */
     public Person(String lastname, String firstname, int age, String address) {
-        this.lastname = lastname;
-        this.firstname = firstname;
-        this.age = age;
+        this(lastname, firstname, age);
         this.address = address;
     }
 
@@ -65,10 +62,7 @@ public class Person {
      * @param cityOfBirth la ville de naissance de la personne
      */
     public Person(String lastname, String firstname, int age, String address, City cityOfBirth) {
-        this.lastname = lastname;
-        this.firstname = firstname;
-        this.age = age;
-        this.address = address;
+        this(lastname, firstname, age, address);
         this.cityOfBirth = cityOfBirth;
     }
 
