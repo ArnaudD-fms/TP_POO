@@ -100,13 +100,8 @@ public class City {
         this.population = population;
     }
 
-    /**
-     * Retourne une représentation textuelle de la ville.
-     *
-     * @return une chaîne contenant le nom, le pays et la population de la ville
-     */
     @Override
     public String toString() {
-        return "[ville : " + name + "] [pays : "+ country + "] [nombre d'habitants : " + population + "]";
+        return  name + ", "+ country;
     }
 }

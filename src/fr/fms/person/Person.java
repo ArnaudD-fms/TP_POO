@@ -72,8 +72,7 @@ public class Person {
         this.cityOfBirth = cityOfBirth;
     }
 
-    @Override
-    public String toString() {
+    public String getInfoPerson() {
         return lastname + ", " + firstname + ", " + age + "ans, " + "habitant " + address + ". Ville de naissance : "
                 + cityOfBirth;
     }
@@ -116,5 +115,10 @@ public class Person {
 
     public void setCityOfBirth(City cityOfBirth) {
         this.cityOfBirth = cityOfBirth;
+    }
+
+    @Override
+    public String toString() {
+        return getInfoPerson();
     }
 }
