@@ -1,7 +1,5 @@
 package fr.fms.entities;
 
-import fr.fms.city.City;
-
 /**
  * Représente un commercial qui est un commercial avec un salaire en % du chiffre d'affaires de l'entreprise
  *

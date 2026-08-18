@@ -1,8 +1,5 @@
 package fr.fms.entities;
 
-import fr.fms.city.City;
-import fr.fms.person.Person;
-
 /**
  * Représente un employé qui est une personne avec une compagnie et un salaire
  *

@@ -1,7 +1,5 @@
 package fr.fms.entities;
 
-import fr.fms.city.City;
-
 /**
  * Représente une capitale avec son nom, son pays, sa population et son monument.
  *

@@ -1,6 +1,4 @@
-package fr.fms.person;
-
-import fr.fms.city.City;
+package fr.fms.entities;
 
 /**
  * Représente une personne avec son nom, son prénom, son âge et son adresse.

@@ -1,8 +1,5 @@
 package fr.fms.entities;
 
-import fr.fms.city.City;
-import fr.fms.person.Person;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
