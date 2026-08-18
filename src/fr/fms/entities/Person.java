@@ -8,10 +8,30 @@ package fr.fms.entities;
  *
  */
 public class Person {
+
+    /**
+     * Nom de famille de la personne
+     */
     private String lastname;
+
+    /**
+     * Prénom de la personne
+     */
     private String firstname;
+
+    /**
+     * Age de la personne
+     */
     private int age;
+
+    /**
+     * Adresse de la personne
+     */
     private String address;
+
+    /**
+     * Ville de naissance de la personne
+     */
     private City cityOfBirth;
 
     /**
