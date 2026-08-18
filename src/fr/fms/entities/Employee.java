@@ -11,7 +11,7 @@ import fr.fms.person.Person;
  *
  */
 public class Employee extends Person {
-    private String company;
+    private Company company;
     private double salary;
 
     /**
@@ -22,7 +22,7 @@ public class Employee extends Person {
      * @param company l'entreprise de l'employé
      * @param salary le salaire de l'employé
      */
-    public Employee(String lastname, String firstname, String company, double salary) {
+    public Employee(String lastname, String firstname, Company company, double salary) {
         super(lastname, firstname);
         this.company = company;
         setSalary(salary);
@@ -37,7 +37,7 @@ public class Employee extends Person {
      * @param company l'entreprise de l'employé
      * @param salary le salaire de l'employé
      */
-    public Employee(String lastname, String firstname, int age, String company, double salary) {
+    public Employee(String lastname, String firstname, int age, Company company, double salary) {
         super(lastname, firstname, age);
         this.company = company;
         setSalary(salary);
@@ -53,7 +53,7 @@ public class Employee extends Person {
      * @param company l'entreprise de l'employé
      * @param salary le salaire de l'employé
      */
-    public Employee(String lastname, String firstname, int age, String address, String company, double salary) {
+    public Employee(String lastname, String firstname, int age, String address, Company company, double salary) {
         super(lastname, firstname, age, address);
         this.company = company;
         setSalary(salary);
@@ -71,17 +71,21 @@ public class Employee extends Person {
      * @param salary le salaire de l'employé
      */
     public Employee(String lastname, String firstname, int age, String address, City cityOfBirth,
-                    String company, double salary) {
+                    Company company, double salary) {
         super(lastname, firstname, age, address, cityOfBirth);
         this.company = company;
         setSalary(salary);
     }
 
-    public String getCompany() {
+    public String getPayment() {
+        return "Salaire mensuel de " + getFirstname() + " " + getLastname() + " : " + Math.round(salary*0.8);
+    }
+
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 
@@ -98,6 +102,6 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return getInfoPerson() + " Entreprise : " + company + ", salaire : " + ((int) salary);
+        return getInfoPerson() + " Entreprise : " + company + ", salaire : " + Math.round(salary);
     }
 }

@@ -19,7 +19,7 @@ public class Salesman extends Employee{
      * @param company l'entreprise du commercial
      * @param salary le salaire du commercial
      */
-    public Salesman(String lastname, String firstname, String company, double salary) {
+    public Salesman(String lastname, String firstname, Company company, double salary) {
         super(lastname, firstname, company, salary);
     }
 
@@ -32,7 +32,7 @@ public class Salesman extends Employee{
      * @param company l'entreprise du commercial
      * @param salary le salaire du commercial
      */
-    public Salesman(String lastname, String firstname, int age, String company, double salary) {
+    public Salesman(String lastname, String firstname, int age, Company company, double salary) {
         super(lastname, firstname, age, company, salary);
     }
 
@@ -46,7 +46,7 @@ public class Salesman extends Employee{
      * @param company l'entreprise du commercial
      * @param salary le salaire du commercial
      */
-    public Salesman(String lastname, String firstname, int age, String address, String company, double salary) {
+    public Salesman(String lastname, String firstname, int age, String address, Company company, double salary) {
         super(lastname, firstname, age, address, company, salary);
     }
 
@@ -61,8 +61,14 @@ public class Salesman extends Employee{
      * @param company l'entreprise du commercial
      * @param salary le salaire du commercial
      */
-    public Salesman(String lastname, String firstname, int age, String address, City cityOfBirth, String company, double salary) {
+    public Salesman(String lastname, String firstname, int age, String address, City cityOfBirth, Company company, double salary) {
         super(lastname, firstname, age, address, cityOfBirth, company, salary);
+    }
+
+    @Override
+    public String getPayment() {
+        return "Salaire mensuel de " + getFirstname() + " " + getLastname() + " : " +
+                Math.round(getSalary()/100 * getCompany().getRevenue());
     }
 
     @Override
@@ -75,6 +81,6 @@ public class Salesman extends Employee{
 
     @Override
     public String toString() {
-        return getInfoPerson() + " Entreprise : " + super.getCompany() + ", % CA : " + ((int) super.getSalary());
+        return getInfoPerson() + " Entreprise : " + super.getCompany() + ", % CA : " + Math.round(super.getSalary());
     }
 }
