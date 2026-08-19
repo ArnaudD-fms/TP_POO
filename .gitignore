@@ -5,6 +5,7 @@ out/
 .kotlin
 .idea/
 TP_POO.iml
+docs/
 
 ### Eclipse ###
 .apt_generated

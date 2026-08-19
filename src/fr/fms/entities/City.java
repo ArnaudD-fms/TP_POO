@@ -8,11 +8,18 @@ package fr.fms.entities;
  * {@code "unknown"}.</p>
  *
  * <p>La population d'une ville ne peut pas être négative.</p>
+ *
+ * <p>Attributs :</p>
+ * <ul>
+ *     <li>{@link #name} — nom de la ville</li>
+ *     <li>{@link #country} — pays dans lequel se situe la ville</li>
+ *     <li>{@link #population} — nombre d'habitants dans la ville</li>
+ * </ul>
  */
 public class City {
 
     /**
-     * nom de la ville
+     * Nom de la ville
      */
     private String name;
 

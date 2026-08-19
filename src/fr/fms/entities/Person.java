@@ -6,6 +6,14 @@ package fr.fms.entities;
  * <p>Une personne peut être créée avec uniquement son nom et son prénom, ou bien
  * avec son âge et son adresse.</p>
  *
+ * <p>Attributs :</p>
+ * <ul>
+ *     <li>{@link #lastname} — nom de famille de la personne</li>
+ *     <li>{@link #firstname} — Prénom de la personne</li>
+ *     <li>{@link #age} — âge de la personne</li>
+ *     <li>{@link #address} — adresse de la personne</li>
+ *     <li>{@link #cityOfBirth} — ville de naissance de la personne</li>
+ * </ul>
  */
 public class Person {
 

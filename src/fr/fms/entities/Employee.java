@@ -6,6 +6,11 @@ package fr.fms.entities;
  * <p>Un employé peut être créé avec uniquement son nom et son prénom, ou bien
  * avec son âge et son adresse. La compagnie et le salaire doivent être renseignés</p>
  *
+ * <p>Attributs :</p>
+ * <ul>
+ *     <li>{@link #company} — entreprise dans laquelle l'employé travail</li>
+ *     <li>{@link #salary} — salaire de l'employé</li>
+ * </ul>
  */
 public class Employee extends Person {
     /**

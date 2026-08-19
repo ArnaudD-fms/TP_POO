@@ -2,6 +2,12 @@ package fr.fms.entities;
 
 /**
  * Représente une entreprise et son chiffre d'affaires
+ *
+ * <p>Attributs :</p>
+ * <ul>
+ *     <li>{@link #name} — nom de l'entreprise</li>
+ *     <li>{@link #revenue} — chiffre d'affaires de l'entreprise</li>
+ * </ul>
  */
 public class Company {
     /**

@@ -8,6 +8,11 @@ package fr.fms.entities;
  * {@code "unknown"}.</p>
  *
  * <p>La population d'une ville ne peut pas être négative.</p>
+ *
+ * <p>Attributs :</p>
+ * <ul>
+ *     <li>{@link #monument} — monument de la ville</li>
+ * </ul>
  */
 public class Capital extends City {
 
